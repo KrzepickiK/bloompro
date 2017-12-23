@@ -1,0 +1,86 @@
+//TYPO
+.h__big--primary{
+    font-size: 3rem;
+    padding: 0 1em 0 1em;
+    text-align: center;
+    span{
+        display: block;
+        font-size: 0.5em;
+    }
+}
+.h__small--primary{
+    text-align: center;
+    font-size: 1.5rem;
+    span{
+        display: block;
+        font-size: 1.2rem;
+    }
+}
+
+.quote__big--primary{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1em 0;
+    span{
+        display: block;
+        width: 100%;
+        text-align: right;
+        font-size: 0.8em;
+    }
+}
+
+.span--red{span{color:#c15c5c}}
+.span--small{span{font-size:0.6em;}}
+
+
+//shapes
+.hexagon {
+	width: 100px;
+	height: 55px;
+	background: red;
+	position: relative;
+}
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid red;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid red;
+}
+
+
+
+
+.text--center{
+    text-align: center;
+}
+
+
+.flex__center--row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.p05em{padding:0.5em;}
+.ptb2em{padding:2em 0;}
+.ptb3rem{padding:3rem 0;}
+.ptb5rem{padding:5rem 0;}
+.ptb10rem{padding:10rem 0;}

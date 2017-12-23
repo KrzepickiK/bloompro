@@ -10,10 +10,11 @@ $table_highlight_color: #ddd;
 
 $container_max-width: 	1200px;
 
-$grid_padding: 			0 10px;
+$grid_padding: 			0;
 
 $color_font_primary: 	#333;
 $color_primary: 		#0c75ed;
+$color_secondary:       #6bc8fe;
 $color_gray: 			#727272;
 $color_black: 			#333;
 $color_white: 			#f9f9f9;
@@ -52,3 +53,12 @@ $color_info_dark: 		darken($color_info,$color_darken_min);
 
 
 $transition_default: 	0.5s all;
+
+//.......... Text decorations .........//
+$text_shadow_1: 0.1em 0.1em 0.1em #000;
+$text_shadow_2: 0 0 0.1em #111, 0.1em 0.1em 0.1em #111;
+$text_shadow_1_bright: 0.1em 0.1em 0.1em #ddd;
+$text_shadow_2_bright: 0 0 0.1em #fff, 0.1em 0.1em 0.1em #fff;
+
+$box_shadow_1: 0 0 2em #aeaeae;;
+$box_shadow_2: 0 0 100em rgba( 56, 132, 255, 0.5 );;

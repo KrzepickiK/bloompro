@@ -1,0 +1,194 @@
+/*---- Kształt ---- */
+
+.btn{
+	padding: 0.5rem 0.9rem;
+	border-radius: 0.2rem;
+	font-family: inherit;
+	text-decoration: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	border: 2px solid transparent;
+	display: inline-block;
+	
+	transition: $transition_default;
+
+	&:active{
+		transform: scale(0.9);
+	}
+}
+
+/*----Zaokrąglenie ---- */
+
+.btn-rounded{
+	border-radius: 1.5rem;
+	padding: 0.5rem 1rem;
+}
+
+
+/*---- Cieniowanie ---- */
+
+.btn-shadow{
+	box-shadow: 0 0 6px $color_gray;
+	
+	&:active{
+		box-shadow: none;
+	}
+}
+
+
+/*---- Obramowanie ---- */
+
+.btn-bordered{
+	border: 2px solid $color_black;
+}
+
+/*---- Rozmiar ---- */
+
+.btn-small{font-size: $font_small; padding:0.4rem;}
+.btn-large{font-size: $font_large; padding: 0.6rem 1rem;}
+
+/*---- Kolory ---- */
+
+.btn-primary{
+	background: $color_primary;
+	color: $color_white;
+	
+	&:focus, &:hover{
+		background: $color_primary_dark;
+		color: $color_white;
+	}
+}
+.btn-primary.btn-bordered{
+	background: none;
+	color: $color_primary;
+	border-color: $color_primary;
+	
+	&:focus, &:hover{
+		color: $color_primary_dark;
+		border-color: $color_primary_dark;
+	}
+}
+.btn-black{
+	background: $color_black;
+	color: $color_white;
+	
+	&:focus, &:hover{
+		background: $color_black_bright;
+		color: $color_white;
+	}
+}
+.btn-black.btn-bordered{
+	background: none;
+	color: $color_black;
+	border-color: $color_black;
+	
+	&:focus, &:hover{
+		color: $color_black_bright;
+		border-color: $color_black_bright;
+	}
+}
+.btn-white{
+	background: $color_white;
+	color: $color_black;
+	
+	&:focus, &:hover{
+		background: $color_white_dark;
+		color: $color_black;
+	}
+}
+.btn-white.btn-bordered{
+	background: none;
+	color: $color_white;
+	border-color: $color_white;
+	
+	&:focus, &:hover{
+		color: $color_white_dark;
+		border-color: $color_white_dark;
+	}
+}
+.btn-success{
+	background: $color_success;
+	color: $color_white;
+	
+	&:focus, &:hover{
+		background: $color_success_dark;
+		color: $color_white;
+	}
+}
+.btn-success.btn-bordered{
+	background: none;
+	color: $color_success;
+	border-color: $color_success;
+	
+	&:focus, &:hover{
+		color: $color_success_dark;
+		border-color: $color_success_dark;
+	}
+}
+.btn-warning{
+	background: $color_warning;
+	color: $color_white;
+	
+	&:focus, &:hover{
+		background: $color_warning_dark;
+		color: $color_white;
+	}
+}
+.btn-warning.btn-bordered{
+	background: none;
+	color: $color_warning;
+	border-color: $color_warning;
+	
+	&:focus, &:hover{
+		color: $color_warning_dark;
+		border-color: $color_warning_dark;
+	}
+}
+.btn-danger{
+	background: $color_danger;
+	color: $color_white;
+	
+	&:focus, &:hover{
+		background: $color_danger_dark;
+		color: $color_white;
+	}
+}
+.btn-danger.btn-bordered{
+	background: none;
+	color: $color_danger;
+	border-color: $color_danger;
+	
+	&:focus, &:hover{
+		color: $color_danger_dark;
+		border-color: $color_danger_dark;
+	}
+}
+.btn-info{
+	background: $color_info;
+	color: $color_white;
+	
+	&:focus, &:hover{
+		background: $color_info_dark;
+		color: $color_white;
+	}
+}
+.btn-info.btn-bordered{
+	background: none;
+	color: $color_info;
+	border-color: $color_info;
+	
+	&:focus, &:hover{
+		color: $color_info_dark;
+		border-color: $color_info_dark;
+	}
+}
+
+
+
+
+.btn-block{
+    display: block;
+    width:100%;
+    text-align: center;
+}
