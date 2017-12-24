@@ -21,17 +21,36 @@
     font-size: 2rem;
     font-weight: bold;
     padding: 1em 0;
+    color: #fff;
+    text-shadow: $text_shadow_1;
     span{
         display: block;
         width: 100%;
         text-align: right;
         font-size: 0.8em;
+        color: $color_primary;
+        text-shadow: $text_shadow_2_bright;
     }
 }
-
+.quote__medium--primary{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1em 0;
+    color: #fff;
+    text-shadow: $text_shadow_2;
+    span{
+        display: block;
+        width: 100%;
+        text-align: right;
+        font-size: 0.8em;
+        color: $color_primary_bright;
+    }
+}
 .span--red{span{color:#c15c5c}}
 .span--small{span{font-size:0.6em;}}
 
+.text--center{text-align: center;}
+.text--left{text-align: left;}
 
 //shapes
 .hexagon {
@@ -65,7 +84,7 @@
 
 
 
-
+.text--bright{color: #fff;}
 .text--center{
     text-align: center;
 }
@@ -79,8 +98,75 @@
     flex-wrap: wrap;
 }
 
+.text__bigger{font-size: 2em;}
+
+
+//paddingi
 .p05em{padding:0.5em;}
 .ptb2em{padding:2em 0;}
 .ptb3rem{padding:3rem 0;}
 .ptb5rem{padding:5rem 0;}
 .ptb10rem{padding:10rem 0;}
+
+//backgroundy
+
+.bg__hero{
+    background: url(../img/hero__bg_1.jpg) no-repeat  center center;
+    background-size: cover;
+}
+.bg__1{
+    background: url(../img/forest.jpg) no-repeat fixed center center;
+    background-size: cover;
+}
+.bg__2{
+    background: url(../img/triangle__black.jpg) center center;
+}
+.bg__3{
+    background: url(../img/foto1.jpg) no-repeat left top;
+    background-size: cover;
+}
+@media only screen and (min-width: 768px){
+.bg__3{
+    background: url(../img/foto1.jpg) no-repeat left top;
+    background-size: 50%;
+}
+}
+.bg__dark--50{
+    background-color: rgba( 0, 0, 0, 0.5 );
+}
+.bg__black{background: #000;color: #fff;}
+
+.bg__white{background-color: #fff;}
+.bg__white--05{background-color: rgba( 255, 255, 255, 0.5 );}
+.bg__white--08{background-color: rgba( 255, 255, 255, 0.8 );}
+.bg__white2{background: $color_white_2;}
+
+.bg__blue{background: #002E5C;}
+
+
+//rozmiary
+.mh__vh--100{}
+.mw__vw--100{}
+.h100p{height:100%;}
+
+.img__responsive{width:100%;}
+
+.img__zoom--10{
+    overflow: hidden; 
+    img{
+    transition: $transition_default;
+    cursor:pointer;
+    transform: scale(1.1);
+        &:hover{transform: scale(1.2)}
+    }
+}
+
+
+
+//list
+.list__primary--normal{
+    list-style: none;
+    li{
+        padding:0.3em;
+    }
+}

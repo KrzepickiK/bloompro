@@ -55,8 +55,9 @@
 	color: $color_white;
 	
 	&:focus, &:hover{
-		background: $color_primary_dark;
+		background: $color_primary_bright;
 		color: $color_white;
+        text-shadow: $text_shadow_1;
 	}
 }
 .btn-primary.btn-bordered{

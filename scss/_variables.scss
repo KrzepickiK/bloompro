@@ -13,23 +13,22 @@ $container_max-width: 	1200px;
 $grid_padding: 			0;
 
 $color_font_primary: 	#333;
-$color_primary: 		#0c75ed;
-$color_secondary:       #6bc8fe;
+$color_primary: 		rgba( 13, 91, 0, 1 );
+$color_secondary:       #c15c5c;
 $color_gray: 			#727272;
 $color_black: 			#333;
 $color_white: 			#f9f9f9;
+$color_white_2:         #F6F5F3;
 $color_success: 		#00c603;
 $color_warning: 		#ff7a14;
 $color_danger: 			#fd0101;
 $color_info: 			#0198fd;
-$color_navbar_bg: 			rgba( 0, 0, 0, 0.8 );
-$color_navbar_text: 			#fff;
 
-$color_darken:	30%;
-$color_darken_min: 10%;
-$color_darken_max: 50%;
+$color_darken:        30%;
+$color_darken_min:    10%;
+$color_darken_max:    50%;
 
-$color_lighten: 20%;
+$color_lighten:     20%;
 $color_lighten_min: 10%;
 $color_lightrn_max: 50%;
 
