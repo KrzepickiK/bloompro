@@ -16,7 +16,21 @@
         font-size: 1.2rem;
     }
 }
-
+.h__bordered80{
+    position: relative;
+    &:before, &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 80%;
+        height: 0.1em;
+        background: #444;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &:before{bottom:0;}
+    &:after{top:0;}
+}
 .quote__big--primary{
     font-size: 2rem;
     font-weight: bold;
@@ -52,6 +66,7 @@
 .text--center{text-align: center;}
 .text--left{text-align: left;}
 
+.color--white{color:#fff;}
 //shapes
 .hexagon {
 	width: 100px;
@@ -103,11 +118,23 @@
 
 //paddingi
 .p05em{padding:0.5em;}
+.p1em{padding:1em;}
+.p2em{padding:2em;}
 .ptb2em{padding:2em 0;}
 .ptb3rem{padding:3rem 0;}
 .ptb5rem{padding:5rem 0;}
 .ptb10rem{padding:10rem 0;}
 
+
+//marginy
+.m05em{margin:0.5em;}
+.m1em{margin:1em;}
+.m2em{margin:2em;}
+.mtb2em{margin:2em 0;}
+.mtb3rem{margin:3rem 0;}
+.mtb5rem{margin:5rem 0;}
+.mtb10rem{margin:10rem 0;}
+.p10pr{padding:10%;}
 //backgroundy
 
 .bg__hero{
@@ -142,6 +169,7 @@
 .bg__white2{background: $color_white_2;}
 
 .bg__blue{background: #002E5C;}
+.bg__primary{background: $color_primary;}
 
 
 //rozmiary
@@ -170,3 +198,13 @@
         padding:0.3em;
     }
 }
+
+
+.link__div{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+//img
+.img--rounded{border-radius: 50%;}
+.img--shadowed{box-shadow: 0 0 2em #000;}

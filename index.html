@@ -10,9 +10,9 @@
   <header>
    
    
-    <div class="container">
+    <div class="container col-s-off col-m-off">
     <div class="logo--big"><h1>Bloompro</h1></div>
-     <nav class="nav__main">
+     <nav class="nav__main" id="nav__main">
          <ul>
              <li>
                 <a href="">Główna</a>
@@ -41,7 +41,7 @@
     </div>
      
      
-      <div class="hero bg__hero">
+      <div class="hero bg__hero" id="nav__main--padding">
           <div class="hero__container container">
               <div class="hero__content">
                   <h1 class="h__big--primary">Pomagamy <span>tym którzy tego potrzebują!</span></h1>
@@ -134,7 +134,7 @@
           
           
           
-          <section class="section--tiles bg__blue text--bright">
+          <section class="section--tiles bg__primary text--bright">
              <div class="container">
                   <div class="row">
                       <div class="col-l-6">
@@ -248,35 +248,37 @@
           
           <section class="section bg__2">
               <div class="container flex__center--row ptb5rem">
+                     <a href="maluska.html" class="link__div">   
                   <div class="person text--center">
-                      <img src="img/zdj1.jpg" alt="">
-                      <h1 class="h__small--primary span--red span--small p05em">Donata Borkowska <span>założycielka</span></h1>
-                      <p>– trener, konsultant, coach ICC. Od 20 lat pracuje w biznesie i dla biznesu</p>
+                      <img src="img/mmaluska.png" alt="">
+                      <h1 class="h__small--primary span--red span--small p05em">Małgorzata Maluśka <span>założycielka</span></h1>
+                      <p>psycholog zarządzania, certyfikowany Coach ACC ICF i Trener Biznesu z dużym doświadczeniem.</p>
+                  </div>
+                     </a>
+                  <div class="person text--center">
+                      <img src="img/aborysgajda.png" alt="">
+                      <h1 class="h__small--primary span--red span--small p05em">Agnieszka Borys-Gajda <span>założycielka</span></h1>
+                      <p>Ekonomista, certyfikowany Coach ACC ICF i doświadczony Trener Biznesu oraz Trener pracujący w oparciu o narzędzia Gallupa.</p>
                   </div>
                   <div class="person text--center">
-                      <img src="img/zdj1.jpg" alt="">
+                      <img src="img/dborkowska.png" alt="">
                       <h1 class="h__small--primary span--red span--small p05em">Donata Borkowska <span>założycielka</span></h1>
-                      <p>– trener, konsultant, coach ICC. Od 20 lat pracuje w biznesie i dla biznesu</p>
+                      <p>trener, konsultant, coach ICC. Od 20 lat pracuje w biznesie i dla biznesu</p>
                   </div>
                   <div class="person text--center">
-                      <img src="img/zdj1.jpg" alt="">
-                      <h1 class="h__small--primary span--red span--small p05em">Donata Borkowska <span>założycielka</span></h1>
-                      <p>– trener, konsultant, coach ICC. Od 20 lat pracuje w biznesie i dla biznesu</p>
+                      <img src="img/aborysgajda.png" alt="">
+                      <h1 class="h__small--primary span--red span--small p05em">Aneta Dominiak <span>założycielka</span></h1>
+                      <p>pedagog, terapeuta pedagogiczny. Uwielbia pracę z dziećmi i młodzieżą. Pracując stawia na indywidualność i naturalną ciekawość świata.</p>
                   </div>
                   <div class="person text--center">
-                      <img src="img/zdj1.jpg" alt="">
-                      <h1 class="h__small--primary span--red span--small p05em">Donata Borkowska <span>założycielka</span></h1>
-                      <p>– trener, konsultant, coach ICC. Od 20 lat pracuje w biznesie i dla biznesu</p>
+                      <img src="img/akaminska.jpg" alt="">
+                      <h1 class="h__small--primary span--red span--small p05em">Alicja Kamińska  <span>założycielka</span></h1>
+                      <p>radca prawny. Pracuje w swoim zawodzie w jednej z firm wrocławskich. Chce zwiększać świadomość prawną ludzi, wykorzystywać w dobrej sprawie swój zawód.</p>
                   </div>
                   <div class="person text--center">
-                      <img src="img/zdj1.jpg" alt="">
-                      <h1 class="h__small--primary span--red span--small p05em">Donata Borkowska <span>założycielka</span></h1>
-                      <p>– trener, konsultant, coach ICC. Od 20 lat pracuje w biznesie i dla biznesu</p>
-                  </div>
-                  <div class="person text--center">
-                      <img src="img/zdj1.jpg" alt="">
-                      <h1 class="h__small--primary span--red span--small p05em">Donata Borkowska <span>założycielka</span></h1>
-                      <p>– trener, konsultant, coach ICC. Od 20 lat pracuje w biznesie i dla biznesu</p>
+                      <img src="img/uhanusiewiczkostecka.png" alt="">
+                      <h1 class="h__small--primary span--red span--small p05em">Urszula Hanusiewicz-Kostecka <span>założycielka</span></h1>
+                      <p>konsultant i doradca biznesu. Entuzjastka komunikacji, wizerunku i PR,  marketingu HR, oraz brandingu pracodawców.  Od ponad 19 lat współpracuję z ludźmi i dla ludzi.</p>
                   </div>
               </div>
           </section>
@@ -303,6 +305,10 @@
           </section>
           <section class="section section--bepartner bg__white2">
                 <h1 class="h__small--primary text--center">Jak ty możesz nas wesprzeć</h1>
+                <div class="container">
+                    
+                <img src="img/ngo_darowizna2017_550px.jpg" class="img__responsive p10pr" alt="">
+                </div>
                 
                 <div class="bepartner bepartner--pay">
                     <h1>PAYu</h1>
@@ -339,5 +345,6 @@
               </div>
           </div>
       </footer>
+      <script src="js/stickyNavBar.js"></script>
   </body>
 </html>

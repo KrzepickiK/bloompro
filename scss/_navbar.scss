@@ -1,0 +1,48 @@
+/* Style the navbar */
+
+.nav__main{
+    z-index: 999;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        li{
+            background: $color_primary;
+            display: inline-block;
+            padding: 1em;
+            &:hover{
+                background: $color_secondary;
+            }
+            
+            a{
+                color: #fff;    
+                text-decoration: none;
+                font-weight: bold;
+                text-align: center;
+                padding: 0.5em;
+            }
+        }
+    }
+    /* dodaje klasę sticky jak osiągnie pozycję przewijania */
+    &.sticky{ 
+        position: fixed;
+        top: 0;
+        left: 0;
+        right:0;
+        transition: $transition_default;
+        opacity: 0.5;
+        width: 100%;
+        ul{
+            li{
+                a{
+//                    padding:0;
+                }
+            }
+        }
+    }
+}
+
+.nav__margin{
+    margin-top: 60px;
+}

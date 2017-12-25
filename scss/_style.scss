@@ -9,37 +9,9 @@ p, ul, div, h1, h2, h3{margin:0;}
 
 .logo--big{
     margin:0;
-    font-size: 3rem;
+    font-size: 1rem;
     padding: 2em 0;
     text-align: center;
-}
-
-.nav__main{
-    ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        li{
-            display: inline-block;
-            background: $color_primary;
-            padding: 1em;
-            position: relative;
-            height: 56px;
-//            margin: 10px 10px;
-            &:hover{
-                background: $color_secondary;
-            }
-            
-            a{
-                color: #fff;    
-                text-decoration: none;
-                font-weight: bold;
-                text-align: center;
-                padding: 0.5em;
-            }
-        }
-    }
 }
 
 .hero{
@@ -68,8 +40,6 @@ p, ul, div, h1, h2, h3{margin:0;}
         background: $color_primary;
     }
 }
-
-
 
 .section--partners{
     h1{
@@ -114,6 +84,8 @@ p, ul, div, h1, h2, h3{margin:0;}
 
 .person{
     width: 300px;
+    height:400px;
+    overflow: hidden;
     color: #fff;
     padding: 1em;
     cursor: pointer;
@@ -131,6 +103,10 @@ p, ul, div, h1, h2, h3{margin:0;}
     padding:0;
 }
 
+.aboutme{
+
+}
+
 .footer{
     min-height:400px;
     background: #262626;
@@ -145,23 +121,3 @@ p, ul, div, h1, h2, h3{margin:0;}
     }
 }
 
-
-//
-//Dzień dobry,
-//przepraszam że nie odpisywałem tak długo, ale zawsze koniec roku to bardzo pracowity czas.
-//Przejrzałem materiały które mi Pani przysłała i raczej nie będzie to onepage jak zakładałem po rozmowie z Szymonem. Teraz święta, więc niestety nie będę mógł za dużo popracować, ale najszybciej jak to możliwe zaplanuję rozkład treści i pomyślę nad jej rozłożeniem, aby strona była jak najbardziej czytelna i nie przytłaczała od razu po wejściu.
-//Z pewnością będę potrzebował więcej zdjęć Pani i  innych wspaniałych kobiet - założycielek fundacji, informacji na temat logo i kolorów związanych z fundacją i na pewno jeszcze kilku cennych informacji, ale to napiszę w następnej wiadomości.
-//Proszę jeszcze odpowiedzieć o jakim terminie Pani myśli jeżeli chodzi o postawienie strony na serwerze ?
-//
-//Życzę Pani wesołych i spokojnych świąt, a także wielu sukcesów związanych z fundacją w nadchodzącym roku. 
-//Pozdrawiam.
-//Krzysztof Krzepicki
-//
-//W dniu 21 grudnia 2017 16:08 użytkownik Urszula Hanusiewicz <urszula.hanusiewicz@wp.pl> napisał:
-//Dzień Dobry,
-//
-//mam nadzieję, ze teraz trafiłam z adresem...
-//
-//Pozdrawiam
-//
-//U. Hanusiewicz
