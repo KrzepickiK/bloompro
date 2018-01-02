@@ -11,14 +11,42 @@ p, ul, div, h1, h2, h3{margin:0;}
     padding: 2em 0;
     text-align: center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    img{
-        width: 150px;
-        height: 150px;
+    div{
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        .quote--big{
+            max-width:800px;
+            margin-left:44px;
+        }
+        
     }
 }
-
+.quote--big{
+    padding:1em;
+    position: relative;
+    font-size: 1.3rem;
+    color: #444;
+    span{
+        display: block;
+        text-align: right;
+        font-size:0.8em;
+    }
+    &:before{
+        content: url("../img/apostrof.png");
+        width:44px;
+        height:44px;
+        position:absolute;
+        left:-40px;
+        top:-10px;
+    }
+    &:after{
+        
+    }
+}
 .hero{
     color: #fff;
     text-shadow: $text_shadow_1;
@@ -113,7 +141,7 @@ p, ul, div, h1, h2, h3{margin:0;}
 }
 
 .footer{
-    min-height:400px;
+    min-height:90vh;
     background: #262626;
     color: #fff;
     .footer__container{
@@ -125,4 +153,56 @@ p, ul, div, h1, h2, h3{margin:0;}
         }
     }
 }
+
+
+
+
+
+
+
+//form
+
+
+
+
+
+.form-input {
+  min-width: 200px;
+  width: 100%;
+  position: relative;
+  margin-top: 1.3em;
+  padding: 0;
+  color: #111; }
+  .form-input.not-empty-input input {
+    border-color: #0c75ed; }
+  .form-input.not-empty-input label {
+    margin-top: -1.1em;
+    font-size: 0.8em;
+    color: #f9f9f9; }
+  .form-input input[type=text], .form-input textarea {
+    cursor: text; }
+  .form-input input, .form-input textarea, .form-input select {
+    border: none;
+    border-bottom: 1px solid #111;
+    outline: none;
+    min-width: inherit;
+    width: inherit;
+    font-family: inherit; }
+    .form-input input + label, .form-input textarea + label, .form-input select + label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: 0.5s all; }
+    .form-input input:focus, .form-input textarea:focus, .form-input select:focus {
+      border-color: #0c75ed; }
+      .form-input input:focus + label, .form-input textarea:focus + label, .form-input select:focus + label {
+        margin-top: -1.1em;
+        font-size: 0.8em;
+        color: #f9f9f9; }
+  .form-input textarea {
+    resize: vertical; }
+
+.form-label-bright {
+  font-size: 1.5em;
+  color: #f9f9f9; }
 

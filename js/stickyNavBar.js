@@ -5,6 +5,8 @@ window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("nav__main");
 var navMainPadding = document.getElementById("nav__main--padding");
 var navMainLogo = document.getElementById("nav__main--logo");
+var navMainMobileBtn = document.getElementById("nav__main__mobile--btn");
+var navMainMobileUl = document.getElementById("nav__main__mobile--ul");
 //var navbar = document.getElementsByClassName("nav__main");
 
 // Get the offset position of the navbar
@@ -21,4 +23,15 @@ function myFunction() {
     navMainPadding.classList.remove("nav__margin");
     navMainLogo.classList.remove("visible")
   }
+}
+
+function showMobileMenu(){
+//    console.log("działa");
+    if(navMainMobileUl.classList == 'show'){
+        navMainMobileUl.classList.remove('show');
+        document.body.addEventListener('click', function(){
+                navMainMobileUl.classList.remove('show');
+        }, true); 
+    }else{
+        navMainMobileUl.classList.add('show');}
 }
