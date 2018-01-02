@@ -844,6 +844,9 @@ p, ul, div, h1, h2, h3 {
     max-width: 800px;
     margin-left: 44px; }
 
+@media only screen and (max-width: 767px) {
+  .logo--big {
+    display: none; } }
 .quote--big {
   padding: 1em;
   position: relative;
