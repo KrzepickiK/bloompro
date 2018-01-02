@@ -10,7 +10,8 @@ p, ul, div, h1, h2, h3{margin:0;}
     font-size: 1rem;
     padding: 2em 0;
     text-align: center;
-    display: flex;
+    display: flex; 
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     div{
