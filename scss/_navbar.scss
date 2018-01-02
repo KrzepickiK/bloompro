@@ -6,11 +6,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        align-self: center;
         flex-wrap: wrap;
+        width:100%;
+        background: $color_primary;
+        transition: $transition_default;
         li{
-            background: $color_primary;
-            display: inline-block;
-            padding: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            height:60px;
             &:hover{
                 background: $color_secondary;
             }
@@ -20,7 +26,7 @@
                 text-decoration: none;
                 font-weight: bold;
                 text-align: center;
-                padding: 0.5em;
+                padding: 0 0.5em;
             }
         }
     }
@@ -31,12 +37,13 @@
         left: 0;
         right:0;
         transition: $transition_default;
-        opacity: 0.5;
         width: 100%;
         ul{
+            background: $color_primary--50p;
             li{
+                background:none;
                 a{
-//                    padding:0;
+//                    padding:0;    
                 }
             }
         }
@@ -45,4 +52,20 @@
 
 .nav__margin{
     margin-top: 60px;
+}
+.nav__main__li--logo{
+    padding:0 !important;
+    margin:0;
+    #nav__main--logo{
+        opacity:0;
+        transition: $transition_default;
+        &.visible{
+            opacity:1;
+        }
+        img{
+            
+            width:60px;
+        }
+
+    }
 }

@@ -148,6 +148,10 @@
 .bg__2{
     background: url(../img/triangle__black.jpg) center center;
 }
+.bg__2--green{
+    background: url(../img/triangle__black--green.jpg) center center;
+
+}
 .bg__3{
     background: url(../img/foto1.jpg) no-repeat left top;
     background-size: cover;
@@ -157,6 +161,11 @@
     background: url(../img/foto1.jpg) no-repeat left top;
     background-size: 50%;
 }
+}
+.bg__4{
+    background: url(../img/hero__bg.jpg) no-repeat  center top;
+    background-size: cover;
+    min-height: 1000px;
 }
 .bg__dark--50{
     background-color: rgba( 0, 0, 0, 0.5 );

@@ -5,13 +5,18 @@
 
 p, ul, div, h1, h2, h3{margin:0;}
 
-
-
 .logo--big{
     margin:0;
     font-size: 1rem;
     padding: 2em 0;
     text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .hero{

@@ -11,12 +11,11 @@
    
    
     <div class="container col-s-off col-m-off">
-    <div class="logo--big"><h1>Bloompro</h1></div>
+    <div class="logo--big">
+        <img src="img/logo-wz%C3%B3r1" alt="">
+    <h1>Bloompro</h1></div>
      <nav class="nav__main" id="nav__main">
          <ul>
-             <li>
-                <a href="">Główna</a>
-             </li>
              <li>
                  <a href="">Kim jesteśmy</a>
              </li>
@@ -24,7 +23,10 @@
                  <a href="">Dla kogo</a>
              </li>
              <li>
-                 <a href="">Komu pomagamy</a>
+                 <a class="scroll" data-speed="500" href="#komu">Komu pomagamy</a>
+             </li>
+             <li class="nav__main__li--logo">
+                <a href=""  id="nav__main--logo"><img src="img/logo-wz%C3%B3r1" alt=""></a>
              </li>
              <li>
                  <a href="">Wesprzyj nas</a>
@@ -45,7 +47,7 @@
           <div class="hero__container container">
               <div class="hero__content">
                   <h1 class="h__big--primary">Pomagamy <span>tym którzy tego potrzebują!</span></h1>
-                  <button class="btn btn-primary btn-rounded btn-shadow">CTA CTA</button>
+                  <button class="btn btn-primary btn-rounded btn-shadow scroll" data-speed="1000" href="#komu">CTA CTA</button>
               </div>
           </div>
       </div>
@@ -134,17 +136,17 @@
           
           
           
-          <section class="section--tiles bg__primary text--bright">
+          <section class="section--tiles bg__2--green text--bright">
              <div class="container">
                   <div class="row">
                       <div class="col-l-6">
                           <div class="row h100p">
                               <div class="col-l-6 flex__center--row"><h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h1></div>
-                              <div class="col-l-6"><img src="img/gridimg3.jpg" class="img__responsive img__filter--red" alt=""></div>
+                              <div class="col-l-6"><img src="img/gridimg3.jpg" class="img__responsive" alt=""></div>
                               <div class="col-l-12 text--center"><h3>Lorem ipsum dolor sit amet,Vel.</h3></div>
                           </div>
                       </div>
-                      <div class="col-l-6  img__zoom--10"><img src="img/helping-hand.png" class="img__responsive img__filter--red" alt=""></div>
+                      <div class="col-l-6  img__zoom--10"><a class="scroll" data-speed="1000" href="#aboutus"><img src="img/hero__bg.jpg" class="img__responsive img__filter--red" alt=""></a></div>
                   </div>
                   <div class="row">
                       <div class="col-l-3 flex__center--row"><h1 class="h__big--primary">Lorem ipsum dolor.</h1></div>
@@ -156,7 +158,7 @@
              </div>
           </section>
           
-          <section class="section">
+          <section class="section" id="komu">
               <div class="container ptb3rem">
             <h1 class="h__big--primary ptb3rem">Komu pomagamy</h1>
             
@@ -246,7 +248,7 @@
           
           
           
-          <section class="section bg__2">
+          <section class="section bg__2" id="aboutus">
               <div class="container flex__center--row ptb5rem">
                      <a href="maluska.html" class="link__div">   
                   <div class="person text--center">
@@ -324,7 +326,7 @@
       </main>
       
       <footer class="footer">
-          <div class="container footer__container">
+          <div class="container footer__container  bg__4">
               <div class="footer__content">
               <div class="row">
                   <div class="col-l-4 col-m-6">
@@ -346,5 +348,6 @@
           </div>
       </footer>
       <script src="js/stickyNavBar.js"></script>
+      <script src="js/smoothScroll.js"></script>
   </body>
 </html>
