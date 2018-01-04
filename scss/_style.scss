@@ -110,10 +110,24 @@ p, ul, div, h1, h2, h3{margin:0;}
     .ico{
         width:100%;
         height: 150px;
-        background: #666;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        img{
+            transition: $transition_default;
+            height:100%;
+        }
+
     }
     &:hover{
         transform: scale(1.05);
+        .ico{
+            img{
+                transform: scale(1.3);
+            }
+        }
     }
 }
 

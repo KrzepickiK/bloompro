@@ -909,9 +909,18 @@ p, ul, div, h1, h2, h3 {
   .box__medium--v .ico {
     width: 100%;
     height: 150px;
-    background: #666; }
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; }
+    .box__medium--v .ico img {
+      transition: 0.5s all;
+      height: 100%; }
   .box__medium--v:hover {
     transform: scale(1.05); }
+    .box__medium--v:hover .ico img {
+      transform: scale(1.3); }
 
 .person {
   width: 300px;
