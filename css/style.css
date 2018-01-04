@@ -1565,13 +1565,29 @@ ul {
     top: 0;
     z-index: 999; }
     .nav__main__mobile .nav__main__mobile--logo {
-      width: 44px;
-      height: 44px;
+      width: 54px;
+      height: 54px;
       z-index: 3; }
     .nav__main__mobile .nav__main__mobile--btn {
-      width: 44px;
-      height: 44px;
+      display: inline-block;
+      padding: 5px 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff719;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px #fff600;
       z-index: 3; }
+      .nav__main__mobile .nav__main__mobile--btn:hover {
+        background-color: #3e8e41; }
+      .nav__main__mobile .nav__main__mobile--btn:active {
+        background-color: #3e8e41;
+        box-shadow: 0 2px #898500;
+        transform: translateY(2px); }
     .nav__main__mobile ul {
       position: fixed;
       width: 100%;
@@ -1586,12 +1602,36 @@ ul {
       transition: 0.5s all; }
       .nav__main__mobile ul.show {
         margin-top: 0; }
-      .nav__main__mobile ul li a {
-        text-decoration: none;
-        font-weight: bold;
-        color: #fff; }
-      .nav__main__mobile ul li #nav__main--logo {
-        display: none; } }
+      .nav__main__mobile ul li {
+        padding: 0.2em; }
+        .nav__main__mobile ul li a {
+          text-decoration: none;
+          font-weight: bold;
+          color: #fff; }
+        .nav__main__mobile ul li #nav__main--logo {
+          display: none; }
+
+  .button--mobile {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999; }
+
+  .button--mobile:hover {
+    background-color: #3e8e41; }
+
+  .button--mobile:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px); } }
 @media only screen and (min-width: 768px) {
   .nav__main__mobile {
     display: none; }
