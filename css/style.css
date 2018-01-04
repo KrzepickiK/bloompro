@@ -1625,6 +1625,9 @@ ul {
   .nav__main__mobile--logo {
     display: none; }
 
+  .hamburger {
+    display: none !important; }
+
   .nav__main {
     z-index: 999;
     display: block;
