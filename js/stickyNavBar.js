@@ -29,9 +29,11 @@ var navMainMobileUl = document.getElementById("nav__main__mobile--ul");
 function showMobileMenu(){
     if(navMainMobileUl.classList == 'show'){
         navMainMobileUl.classList.remove('show');
+        navMainMobileBtn.classList.remove('is-active');
     }else{
 //        console.log(navMainMobileUl.classList);
         navMainMobileUl.classList.add('show');
+        navMainMobileBtn.classList.add('is-active');
     }
 }
 //function hideMenuByClick(){
